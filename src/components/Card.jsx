@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -49,17 +50,19 @@ const Info = styled.div`
 
 const Card = () => {
   return (
-    <Container>
-      <Image src='https://t1.daumcdn.net/cfile/tistory/992E9A335A293B1709' />
-      <Details>
-        <ChannelImage src='https://mblogthumb-phinf.pstatic.net/MjAyMDAyMDFfMjYz/MDAxNTgwNTY2MDA4NjM5.A2jklfg06tC_6c0IjK6Y_5hd3Rsidevs7Yj0e11iZ50g.M-XuEj68HH1gEaabsm-Jfyb24BPtBA9a0gKFaocUgZwg.JPEG.gibanyeee/1580566006580.jpg?type=w800' />
-        <Texts>
-          <Title>미미일소흔경성</Title>
-          <ChannelName>미미</ChannelName>
-          <Info>조회수 66만회 · 1일전</Info>
-        </Texts>
-      </Details>
-    </Container>
+    <Link to="/video/test" style={{textDecoration: "none"}}>
+      <Container>
+        <Image src='https://t1.daumcdn.net/cfile/tistory/992E9A335A293B1709' />
+        <Details>
+          <ChannelImage src='https://mblogthumb-phinf.pstatic.net/MjAyMDAyMDFfMjYz/MDAxNTgwNTY2MDA4NjM5.A2jklfg06tC_6c0IjK6Y_5hd3Rsidevs7Yj0e11iZ50g.M-XuEj68HH1gEaabsm-Jfyb24BPtBA9a0gKFaocUgZwg.JPEG.gibanyeee/1580566006580.jpg?type=w800' />
+          <Texts>
+            <Title>미미일소흔경성</Title>
+            <ChannelName>미미</ChannelName>
+            <Info>조회수 66만회 · 1일전</Info>
+          </Texts>
+        </Details>
+      </Container>
+    </Link>
   )
 }
 
