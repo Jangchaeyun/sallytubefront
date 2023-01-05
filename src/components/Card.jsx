@@ -3,20 +3,23 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  width: 360px;
-  margin-bottom: 45px;
+  width: ${(props) => props.type === "sm" && "360px"};
+  margin-bottom: ${(props) => props.type === "sm" ? "10px" : "45px"};
   cursor: pointer;
+  display: ${(props) => props.type === "sm" && "flex"};
+  gap: 10px;
 `
 
 const Image = styled.img`
   width: 100%;
-  height: 202px;
+  height:${(props) => props.type === "sm" ? "120px" : "202px"};
   background-color: #999;
+  flex: 1;
 `
 
 const Details = styled.div`
   display: flex;
-  margin-top: 16px;
+  margin-top: ${(props) => props.type !== "sm" && "16px"};
   gap: 12px;
 `
 
@@ -25,6 +28,7 @@ const ChannelImage = styled.img`
   height: 36px;
   border-radius: 50%;
   background-color: #999;
+  display: ${(props) => props.type === "sm" && "none"};
 `
 
 const Texts = styled.div`
@@ -48,13 +52,13 @@ const Info = styled.div`
   color: ${({ theme }) => theme.textSoft};
 `
 
-const Card = () => {
+const Card = ({type}) => {
   return (
     <Link to="/video/test" style={{textDecoration: "none"}}>
-      <Container>
-        <Image src='https://t1.daumcdn.net/cfile/tistory/992E9A335A293B1709' />
-        <Details>
-          <ChannelImage src='https://yt3.googleusercontent.com/ytc/AMLnZu8-IjE5bsn90NUm8sfcQgLtfbfQgBAzcnFEKA=s88-c-k-c0x00ffffff-no-rj' />
+      <Container type={type}>
+        <Image type={type} src='https://t1.daumcdn.net/cfile/tistory/992E9A335A293B1709' />
+        <Details type={type}>
+          <ChannelImage type={type} src='https://yt3.googleusercontent.com/ytc/AMLnZu8-IjE5bsn90NUm8sfcQgLtfbfQgBAzcnFEKA=s88-c-k-c0x00ffffff-no-rj' />
           <Texts>
             <Title>미미일소흔경성 7,8,9회</Title>
             <ChannelName>이다인</ChannelName>
