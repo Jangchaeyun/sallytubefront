@@ -160,7 +160,7 @@ const Menu = ({darkMode, setDarkMode}) => {
         </Item>
         <Item onClick={() => setDarkMode(!darkMode)}>
           <SettingsBrightnessOutlinedIcon />
-          모드
+          {darkMode ? "밝은" : "어두운"} 모드
         </Item>
       </Wrapper>
     </Container>)

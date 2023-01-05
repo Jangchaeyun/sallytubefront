@@ -54,11 +54,11 @@ const Card = () => {
       <Container>
         <Image src='https://t1.daumcdn.net/cfile/tistory/992E9A335A293B1709' />
         <Details>
-          <ChannelImage src='https://mblogthumb-phinf.pstatic.net/MjAyMDAyMDFfMjYz/MDAxNTgwNTY2MDA4NjM5.A2jklfg06tC_6c0IjK6Y_5hd3Rsidevs7Yj0e11iZ50g.M-XuEj68HH1gEaabsm-Jfyb24BPtBA9a0gKFaocUgZwg.JPEG.gibanyeee/1580566006580.jpg?type=w800' />
+          <ChannelImage src='https://yt3.googleusercontent.com/ytc/AMLnZu8-IjE5bsn90NUm8sfcQgLtfbfQgBAzcnFEKA=s88-c-k-c0x00ffffff-no-rj' />
           <Texts>
-            <Title>미미일소흔경성</Title>
-            <ChannelName>미미</ChannelName>
-            <Info>조회수 66만회 · 1일전</Info>
+            <Title>미미일소흔경성 7,8,9회</Title>
+            <ChannelName>이다인</ChannelName>
+            <Info>조회수 72만회 · 4년전</Info>
           </Texts>
         </Details>
       </Container>
