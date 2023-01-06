@@ -118,10 +118,12 @@ const Menu = ({darkMode, setDarkMode}) => {
         <Hr />
         <Login>
           로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수 있습니다.
-          <Button>
-            <AccountCircleOutlinedIcon />
-            로그인
-          </Button>
+          <Link to="signin" style={{textDecoration:"none"}}>
+            <Button>
+              <AccountCircleOutlinedIcon />
+              로그인
+            </Button>
+          </Link>
         </Login>
         <Hr />
         <Title>Best of sallytube</Title>
